@@ -37,7 +37,7 @@ all:
 clean:
 
 else	#linux
-PROGS = oktodac.so crossover2x2lfe.so crossoverLV6.so REWgenericEQ.so testfunction.so
+PROGS = REWgenericEQ.so 
 
 all:	$(PROGS)
 
