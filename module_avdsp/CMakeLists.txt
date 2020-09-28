@@ -16,7 +16,7 @@ add_library(asound_module_pcm_avdsp SHARED runtime/dsp_runtime.c encoder/dsp_fil
 target_compile_definitions(asound_module_pcm_avdsp PRIVATE -DPIC)
 target_link_libraries(asound_module_pcm_avdsp asound)
 
-add_executable(dspcreate encoder/dspcreate.c encoder/dsp_encoder.c encoder/dsp_filters.c encoder/dsp_fileaccess.c encoder/dsp_nanosharcxml.c )
+add_executable(dspcreate encoder/dspcreate.c encoder/dsp_encoder.c encoder/dsp_filters.c encoder/dsp_fileaccess.c )
 target_link_libraries(dspcreate m)
 target_link_libraries(dspcreate dl)
 set_target_properties(dspcreate PROPERTIES ENABLE_EXPORTS TRUE)

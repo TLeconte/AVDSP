@@ -11,7 +11,7 @@
 #include <stdlib.h>
 #include <dlfcn.h>
 
-extern int minidspCreateParameters(char * xmlName);
+// extern int minidspCreateParameters(char * xmlName);
 
 #define opcodesMax 10000                 // just to define a maximum, could be up to 65000 (=256kbytes)
 
@@ -118,8 +118,11 @@ int main(int argc, char **argv) {
 	    break;
     }
 
+/*
     if (minidspProgName != NULL)
         if (minidspCreateParameters(minidspProgName)) exit(-1);
+*/
+
 /*
     if( dumpFileName == NULL) {
     	fprintf(stderr,"-dumpfile name Needed\n\n");
